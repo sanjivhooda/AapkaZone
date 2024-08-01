@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .input-style {
+    @apply mt-1 p-2 w-full h-11 border rounded-md focus:border-gray-400 ring-1 ring-gray-300;
+  }
+
+  .li-style {
+    @apply hover:bg-bgclr8 hover:text-bgclr3 hover:border-b hover:border-gray-600 py-2 px-5;
+  }
+
+  .active {
+    @apply bg-bgclr8 text-bgclr3 border-b border-gray-600;
+  }
+
+  .bankNavbarStyle {
+    @apply bg-bgclr text-txtclr;
+  }
+  
+}
+
+.stdropdown-tool {
+
+  display: none;
+}
+
+.ant-table
+  .ant-table-container
+  .ant-table-content
+  table
+  thead.ant-table-thead
+  .ant-table-cell {
+  color: #718EBF
+}
+
