@@ -51,7 +51,7 @@ const Header = () => {
           <Link to="/browse" className=" my-2 md:my-0">
             Home
           </Link>
-          <Link to="/details/Emergency%20Support" className=" my-2 md:my-0">
+          <Link to="/details/:name" className=" my-2 md:my-0">
             Services
           </Link>
           <Link to="/care-plan" className=" my-2 md:my-0">
@@ -60,7 +60,7 @@ const Header = () => {
           <Link to="/blog" className=" my-2 md:my-0">
             Blog
           </Link>
-          <Link to="/pricing" className=" my-2 md:my-0">
+          <Link to="/about-us" className=" my-2 md:my-0">
             About
           </Link>
           {jwtToken ? (

@@ -113,13 +113,13 @@ const DetailsPage = () => {
         </div>
         <div className="grid grid-cols-7 gap-4 mx-20 mt-16">
           <div className="col-span-4">
-            <h2 className="text-xl font-semibold">{selectedService.name}</h2>
-            <p className="mt-2 text-gray-600">{selectedService.description}</p>
+            <h2 className="text-xl font-semibold">{selectedService?.name}</h2>
+            <p className="mt-2 text-gray-600">{selectedService?.description}</p>
           </div>
           <div className="mt-4 col-span-3">
             <img
-              src={selectedService.image}
-              alt={selectedService.name}
+              src={selectedService?.image}
+              alt={selectedService?.name}
               className="w-full h-48 object-cover rounded-lg"
             />
           </div>
