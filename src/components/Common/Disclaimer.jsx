@@ -6,13 +6,13 @@ const { Title, Paragraph } = Typography;
 
 const Disclaimer = () => {
   return (
-    <Layout className="min-h-screen bg-gray-100">
-      <Content className="p-8 md:p-16 lg:p-24">
-        <div className="bg-white p-6 md:p-12 lg:p-16 rounded-lg shadow-md">
-          <Title level={2} className="text-center mb-8">Disclaimer</Title>
+    <Layout className="min-h-screen bg-gray-100 mt-20">
+      <Content className="p-4 md:p-8 lg:p-16">
+        <div className="bg-white p-4 md:p-8 lg:p-12 rounded-lg shadow-md">
+          <Title level={2} className="text-center mb-6 md:mb-8">Disclaimer</Title>
 
           <Paragraph>
-            This website (‘Website’) is designed and maintained by Spshtech Solutions Limited Liability Partnership (‘Company’) to provide information to the users on "As-Is" basis and does not guarantee the accuracy or reliability of such information. The Company shall not be liable for any losses that occur as a result of reliance on the information provided through the Website. The Company cannot guarantee and does not promise any specific results from use of the Website and/or the service or information provided through the Website.
+            This website (‘Website’) is designed and maintained by Spshtech Solutions Limited Liability Partnership (‘Company’) to provide information to the users on an "As-Is" basis and does not guarantee the accuracy or reliability of such information. The Company shall not be liable for any losses that occur as a result of reliance on the information provided through the Website. The Company cannot guarantee and does not promise any specific results from use of the Website and/or the service or information provided through the Website.
           </Paragraph>
 
           <Paragraph>

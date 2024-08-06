@@ -1,6 +1,6 @@
 import React from "react";
 import { Form, Input, Radio, Button } from "antd";
-import careCouncellor from '../../assets/care-councellor.jpg'
+import careCouncellor from '../../assets/care-councellor.jpg';
 
 const { TextArea } = Input;
 
@@ -16,10 +16,10 @@ const CareCounsellor = () => {
   return (
     <div className="container mx-auto p-4 mt-20">
       <section className="my-8">
-        <h1 className="text-4xl font-bold text-center">
+        <h1 className="text-2xl md:text-4xl font-bold text-center">
           Become A Care Counsellor
         </h1>
-        <p className="text-center mt-4">
+        <p className="text-center mt-4 text-sm md:text-base">
           AapkaZone ElderCare is the Gold-standard among professionally managed
           services for elderly available across the country, helping them age
           comfortably at their own home. We care like family for elderly,
@@ -37,13 +37,13 @@ const CareCounsellor = () => {
       </section>
 
       <section className="my-8">
-        <h2 className="text-2xl font-bold">Job Profile</h2>
-        <p>
+        <h2 className="text-xl md:text-2xl font-bold">Job Profile</h2>
+        <p className="text-sm md:text-base">
           Care Counsellors are the heart of AapkaZone. Each Care Counsellor has
           a very high degree of empathy, understanding, and a commitment to help
           senior citizens. What do we expect our Care Counsellors to do:
         </p>
-        <ul className="list-disc ml-6 mt-2">
+        <ul className="list-disc ml-6 mt-2 text-sm md:text-base">
           <li>Fortnightly/weekly visit to elders for ensuring well-being.</li>
           <li>
             Assistance for activities as required – arranging support, services
@@ -55,44 +55,44 @@ const CareCounsellor = () => {
         </ul>
       </section>
 
-      <div className="my-8 grid grid-cols-2 gap-12">
+      <div className="my-8 grid grid-cols-1 lg:grid-cols-2 gap-12">
         <div className="col-span-1">
-        <h2 className="text-2xl font-bold">What Are We Looking For</h2>
-        <ul className="list-disc ml-6 mt-2">
-          <li>
-            What is needed most is a sense of compassion, genuine care and
-            pleasant disposition.
-          </li>
-          <li>
-            While the role is gender neutral, women constitute more than 90% of
-            our organisation (and perhaps for a good reason)
-          </li>
-          <li>
-            Well educated, with proficiency in English, Hindi and Local Language
-          </li>
-          <li>
-            Have approximately 3-4 hours a day, twice a week for care visit.
-          </li>
-          <li>
-            Active and resourceful (generally between 30 and 50 yrs, though we
-            have some exceptions)
-          </li>
-          <li>Comfortable with basic technology</li>
-          <li>
-            Willing to travel locally (generally families under care are within
-            30 mins of travel)
-          </li>
-          <li>Experience of caring for elderly in own family is a plus</li>
-        </ul>
+          <h2 className="text-xl md:text-2xl font-bold">What Are We Looking For</h2>
+          <ul className="list-disc ml-6 mt-2 text-sm md:text-base">
+            <li>
+              What is needed most is a sense of compassion, genuine care and
+              pleasant disposition.
+            </li>
+            <li>
+              While the role is gender neutral, women constitute more than 90% of
+              our organisation (and perhaps for a good reason)
+            </li>
+            <li>
+              Well educated, with proficiency in English, Hindi and Local Language
+            </li>
+            <li>
+              Have approximately 3-4 hours a day, twice a week for care visit.
+            </li>
+            <li>
+              Active and resourceful (generally between 30 and 50 yrs, though we
+              have some exceptions)
+            </li>
+            <li>Comfortable with basic technology</li>
+            <li>
+              Willing to travel locally (generally families under care are within
+              30 mins of travel)
+            </li>
+            <li>Experience of caring for elderly in own family is a plus</li>
+          </ul>
         </div>
-        <div className="col-span-1 px-10 ">
-            <img src={careCouncellor} className="rounded-3xl" />
+        <div className="col-span-1 flex justify-center items-center px-4 lg:px-10">
+          <img src={careCouncellor} className="rounded-3xl w-full lg:w-auto" alt="Care Counsellor"/>
         </div>
       </div>
 
-      <div className=" mx-48 p-4 py-12 bg-gray-100 rounded-lg ">
+      <div className="mx-4 md:mx-24 lg:mx-48 p-4 py-8 bg-gray-100 rounded-lg">
         <div>
-          <h2 className="text-2xl font-bold pb-4 flex items-center justify-center">
+          <h2 className="text-xl md:text-2xl font-bold pb-4 flex items-center justify-center">
             Apply Now
           </h2>
           <Form
@@ -100,9 +100,9 @@ const CareCounsellor = () => {
             layout="vertical"
             onFinish={onFinish}
             onFinishFailed={onFinishFailed}
-            className="space-y-1"
+            className="space-y-4"
           >
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <Form.Item
                 name="firstName"
                 label="First name"
@@ -144,7 +144,7 @@ const CareCounsellor = () => {
             >
               <Input />
             </Form.Item>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <Form.Item
                 name="mobileNo"
                 label="Mobile No."
@@ -172,7 +172,7 @@ const CareCounsellor = () => {
                 <Input />
               </Form.Item>
             </div>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <Form.Item
                 name="city"
                 label="Your city"
@@ -287,7 +287,7 @@ const CareCounsellor = () => {
             >
               <TextArea rows={2} />
             </Form.Item>
-            <Form.Item className="mb-2">
+            <Form.Item className="mb-2 flex justify-center">
               <Button type="primary" htmlType="submit">
                 Submit
               </Button>

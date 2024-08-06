@@ -1,6 +1,16 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { HomeOutlined, HeartOutlined, SafetyOutlined, MobileOutlined, DollarOutlined, SmileOutlined, CarOutlined, ToolOutlined, ExperimentOutlined } from '@ant-design/icons';
+import {
+  HomeOutlined,
+  HeartOutlined,
+  SafetyOutlined,
+  MobileOutlined,
+  DollarOutlined,
+  SmileOutlined,
+  CarOutlined,
+  ToolOutlined,
+  ExperimentOutlined
+} from '@ant-design/icons';
 
 const namesAndIcons = [
   { name: 'Emergency Support', icon: <SafetyOutlined /> },
@@ -12,7 +22,7 @@ const namesAndIcons = [
   { name: 'Social Engagement', icon: <SmileOutlined /> },
   { name: 'Safety & Security', icon: <SafetyOutlined /> },
   { name: 'Mobility & Travel', icon: <CarOutlined /> },
-  { name: 'Labs & diagnostics', icon: <ExperimentOutlined /> }
+  { name: 'Labs & Diagnostics', icon: <ExperimentOutlined /> }
 ];
 
 const ServiceCard = ({ name, icon }) => {
@@ -36,9 +46,9 @@ const ServiceCard = ({ name, icon }) => {
 const Cards = () => (
   <div className='bg-[#ffffff] min-h-[25vh] shadow-md flex flex-col justify-center items-center'>
     <div className='flex items-center justify-center'>
-      <h1 className='pt-4'>Elderly Care Services</h1>
+      <h1 className='pt-4 text-2xl md:text-3xl'>Elderly Care Services</h1>
     </div>
-    <div className='grid grid-cols-5 gap-24 mx-16 mt-6 pb-6'>
+    <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 sm:gap-12 lg:gap-24 mx-4 sm:mx-8 md:mx-16 mt-6 pb-6'>
       {namesAndIcons.map((item) => (
         <ServiceCard key={item.name} name={item.name} icon={item.icon} />
       ))}
