@@ -101,7 +101,7 @@ const DetailsPage = () => {
               <div key={index} onClick={() => handleClick(item.name)}>
                 <div
                   className={`flex flex-col items-center justify-center h-48 w-48 rounded-3xl ${
-                    item.name === selectedName ? "bg-[#18b8b0]" : "bg-gray-200"
+                    item.name === selectedName ? "bg-gray-200" : "bg-[#18b8b0]"
                   } text-black cursor-pointer p-4 shadow-md`}
                 >
                   <div className="text-5xl">{item.icon}</div>
