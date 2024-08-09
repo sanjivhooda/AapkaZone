@@ -8,43 +8,51 @@ const Footer = () => {
         <div className="w-full md:w-1/4 p-4">
           <h1 className="font-serif text-lg mb-4">About</h1>
           <p className="text-gray-600">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi
-            cumque tenetur inventore veniam, hic vel ipsa necessitatibus ducimus
-            architecto fugiat!
+            At Aapkazone, we are dedicated to providing exceptional care and
+            support to the elderly. Our mission is to enhance the quality of
+            life for older adults by delivering compassionate,
+            and customized care services that cater to their unique needs.
           </p>
         </div>
-        <div className="w-full md:w-1/4 p-4">
+        <div className="w-full md:w-1/5 p-4 ml-8">
           <h2 className="font-serif text-lg mb-4">Quick Links</h2>
           <ul>
-            <li className="py-1 underline text-gray-700">Amazing Atmosphere</li>
-            <li className="py-1 underline text-gray-700">Caring Staff</li>
-            <li className="py-1 underline text-gray-700">FAQs</li>
+            <li className="py-1 underline text-gray-700">Home</li>
+            <li className="py-1 underline text-gray-700">Care Plan</li>
+            <li className="py-1 underline text-gray-700">Blog</li>
             <li className="py-1 underline text-gray-700">About Us</li>
             <li className="py-1 underline text-gray-700">Contact Us</li>
           </ul>
         </div>
-        <div className="w-full md:w-1/4 p-4">
+        <div className="w-full md:w-1/5 p-4">
           <h2 className="font-serif text-lg mb-4">Helpful Links</h2>
           <ul>
-            <li className="py-1 underline text-gray-700">Hospice Care</li>
+            <li className="py-1 underline text-gray-700">Privacy Policy</li>
             <Link to="/disclaimer">
               <li className="py-1 underline text-gray-700">Disclaimer</li>
             </Link>
             <Link to="/cookies">
-              <li className="py-1 underline text-gray-700">Cookie Policy</li>
+              <li className="py-1 underline text-gray-700">Cookies Policy</li>
             </Link>
             <Link to="/terms&conditions">
               <li className="py-1 underline text-gray-700">Terms</li>
             </Link>
           </ul>
         </div>
-        <div className="w-full md:w-1/4 p-4">
-          <h2 className="font-serif text-lg mb-4">Resources</h2>
+        <div className="w-full md:w-1/5 p-4">
+          <h2 className="font-serif text-lg mb-4">Services</h2>
           <ul>
+            <Link to='/details/:name'>
             <li className="py-1 underline text-gray-700">Health Care</li>
+            </Link>
+            <Link to='/details/:name'>
             <li className="py-1 underline text-gray-700">Elderly Care</li>
-            <li className="py-1 underline text-gray-700">Quality Care</li>
-            <li className="py-1 underline text-gray-700">Care with Love</li>
+            </Link>
+            <Link to='/details/:name'>
+            <li className="py-1 underline text-gray-700">Health Support</li>
+            </Link>
+            
+            
           </ul>
         </div>
       </div>

@@ -9,37 +9,42 @@ import {
   RightOutlined,
 } from "@ant-design/icons";
 import { Carousel } from "antd";
+import medicalEquipment from "../../assets/Medical equipment & devices.jpg";
+import elderTech from '../../assets/Elder tech.png'
+import healthSupport from '../../assets/Health support.jpg'
+import homeHealth from '../../assets/Home health care.jpg'
+import tele from '../../assets/Tele consultation.jpg'
 
 const namesAndIcons = [
   {
     name: "Medical equipment",
     icon: <HeartOutlined />,
     description: `High-quality medical equipment for elderly care. Our range of medical equipment ensures that seniors receive the best care possible. From mobility aids like walkers and wheelchairs to advanced medical devices such as blood pressure monitors and oxygen concentrators, our products are designed to meet the unique needs of the elderly. Each item is chosen for its reliability, ease of use, and durability, helping to improve the quality of life for seniors.`,
-    image: "https://via.placeholder.com/150",
+    image: `${medicalEquipment}`,
   },
   {
     name: "Elder tech",
     icon: <MobileOutlined />,
     description: `Advanced technology solutions designed for the elderly. Our elder tech products include smart home devices, wearable health monitors, and easy-to-use communication tools. These technologies are specifically tailored to help seniors stay connected, safe, and healthy. From emergency alert systems to voice-activated assistants, our elder tech solutions empower seniors to live more independently and confidently.`,
-    image: "https://via.placeholder.com/150",
+    image: `${elderTech}`,
   },
   {
     name: "Health support",
     icon: <HeartOutlined />,
     description: `Comprehensive health support services for seniors. Our health support services include personalized care plans, regular health check-ups, and access to a network of healthcare professionals. We focus on preventive care, chronic disease management, and rehabilitation services to ensure that seniors maintain their health and well-being. Our dedicated team is committed to providing compassionate and effective care tailored to each individual's needs.`,
-    image: "https://via.placeholder.com/150",
+    image: `${healthSupport}`,
   },
   {
     name: "Home health care",
     icon: <HomeOutlined />,
     description: `In-home health care services tailored to elderly needs. Our home health care services offer a range of support, including skilled nursing, physical therapy, and personal care. We strive to create a comfortable and safe home environment for seniors, allowing them to receive medical care and assistance with daily activities without leaving their homes. Our caregivers are trained professionals who are dedicated to enhancing the quality of life for our clients.`,
-    image: "https://via.placeholder.com/150",
+    image: `${homeHealth}`,
   },
   {
     name: "Tele consultation",
     icon: <SafetyOutlined />,
     description: `Convenient teleconsultation services for seniors. Our teleconsultation services allow seniors to connect with healthcare providers from the comfort of their homes. This service includes virtual appointments, follow-up visits, and access to medical advice without the need to travel. Teleconsultation is a valuable tool for managing chronic conditions, receiving timely medical attention, and maintaining regular contact with healthcare professionals.`,
-    image: "https://via.placeholder.com/150",
+    image: `${tele}`,
   },
 ];
 
